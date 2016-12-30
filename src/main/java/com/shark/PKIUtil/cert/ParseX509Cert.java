@@ -99,5 +99,18 @@ public class ParseX509Cert {
         }
 
         //TODO 考虑如何对证书进行验证,参考别人的代码
+        this.verifyCert(certContent);
+    }
+
+    /**
+     * 初步考虑验证以下一些内容:
+     *   1.证书有效期
+     *   2.证书链是否受信任
+     *   3.证书用途（用于签名/加密/密钥协商）
+     *   4.验证证书吊销状态（CRL或是OCSP）
+     * @param certContent
+     */
+    private void verifyCert(byte[] certContent) {
+
     }
 }
