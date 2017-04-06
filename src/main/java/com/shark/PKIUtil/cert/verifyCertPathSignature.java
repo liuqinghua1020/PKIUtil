@@ -21,6 +21,7 @@ import java.security.interfaces.RSAPublicKey;
  * 本类主要研究下 对于终端证书，如何使用其颁发者的公钥对其证书签名做验证
  *
  * 相关的处理说明可以查看地址:
+ *  https://liuqinghua1020.gitbooks.io/meditations/content/certverifySignature.html
  */
 public class verifyCertPathSignature {
 
